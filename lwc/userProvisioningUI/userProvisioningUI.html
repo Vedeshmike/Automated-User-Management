@@ -1,0 +1,77 @@
+<template>
+    <lightning-card title="User Provisioning Rule" icon-name="standard:work_order">
+        <div class="slds-p-around_medium">
+            <!-- Rule Type Selection -->
+
+            <div class="slds-grid slds-gutters slds-m-top_medium">
+                <!-- Job Title -->
+                <div class="slds-col slds-size_1-of-2">
+                    <lightning-combobox name="jobTitle" label="Job Title" 
+                        placeholder="Select a job title"
+                        options={lookupOptions.jobTitles} 
+                        value={jobTitle} onchange={handleFieldChange}
+                        required>
+                    </lightning-combobox>
+                </div>
+
+                <!-- Department -->
+                <div class="slds-col slds-size_1-of-2">
+                    <lightning-combobox name="department" label="Department" 
+                        placeholder="Select a department"
+                        options={lookupOptions.departments} 
+                        value={department} onchange={handleFieldChange}
+                        required>
+                    </lightning-combobox>
+                </div>
+            </div>
+
+            <div class="slds-grid slds-gutters slds-m-top_medium">
+                <!-- Profile -->
+                <div class="slds-col slds-size_1-of-2">
+                    <lightning-combobox name="profileName" label="Profile" 
+                        placeholder="Select a profile"
+                        options={lookupOptions.profiles} 
+                        value={profile} onchange={handleFieldChange}
+                        required>
+                    </lightning-combobox>
+                </div>
+
+                <!-- Role -->
+                <div class="slds-col slds-size_1-of-2">
+                    <lightning-combobox name="roleName" label="Role" 
+                        placeholder="Select a role"
+                        options={lookupOptions.roles} 
+                        value={role} onchange={handleFieldChange}
+                        required>
+                    </lightning-combobox>
+                </div>
+            </div>
+
+            <!-- Permission Sets Selection -->
+            <div class="slds-m-top_medium">
+                <lightning-dual-listbox name="permissionSetNames" 
+                    label="Permission Sets" source-label="Available" 
+                    selected-label="Selected" 
+                    options={permissionSets} value={selectedPermissionSets} 
+                    onchange={handlePermissionSelect} required>
+                </lightning-dual-listbox>
+            </div>
+            
+            <!-- Save Button -->
+            <div class="slds-grid slds-gutters slds-m-top_medium">
+                <div class="slds-col slds-size_1-of-2">
+                    <lightning-input type="checkbox" 
+                    label="Is Active" 
+                    checked={isActive} 
+                    onchange={handleCheckboxChange}>
+                    </lightning-input>
+                </div> 
+                    <div class="slds-col slds-size_1-of-2">
+                <lightning-button label="Clear" variant="neutral" onclick={clearForm} class="slds-m-right_small"></lightning-button>
+                <lightning-button label="Save Rule" variant="brand" onclick={handleSave}></lightning-button>
+            </div>
+                    </div>
+            
+        </div>
+    </lightning-card>
+</template>
