@@ -1,6 +1,6 @@
 # 🔐 Automated User Management (AUM) - Salesforce
 
-AUM (Automated User Management) is a native Salesforce project built to **simplify and automate user permission assignments** — perfect for Salesforce Admins who want to eliminate repetitive tasks and streamline user provisioning.
+AUM (Automated User Management) is a native Salesforce project built to **simplify and automate user permission assignments** perfect for Salesforce Admins who want to eliminate repetitive tasks and streamline user provisioning.
 
 ---
 
