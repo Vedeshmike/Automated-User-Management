@@ -39,7 +39,7 @@ This project is **under active development**. Some of the upcoming features incl
 
 - 📊 **User License Dashboard** – Quickly view license usage and availability.
 - 🤖 **Admin AI Agent** – Ask real-time questions like “How many Salesforce licenses are available?”
-- 🧠 **Smart Suggestions** – AI-powered suggestions for permissions based on usage patterns.
+- 🧠 **Smart Suggestions** – AI-powered suggestions for Licenses based on usage patterns.
 
 ---
 
