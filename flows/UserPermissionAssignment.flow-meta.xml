@@ -20,6 +20,13 @@
                 <elementReference>PermissionCreationLoop.Permission_Set_Id__c</elementReference>
             </value>
         </assignmentItems>
+        <assignmentItems>
+            <assignToReference>var_singlepermissionRecord.PermissionSetGroupId</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>PermissionCreationLoop.Permission_Set_Group_Id__c</elementReference>
+            </value>
+        </assignmentItems>
         <connector>
             <targetReference>CollectionAssignment</targetReference>
         </connector>
@@ -119,6 +126,7 @@
         <queriedFields>Id</queriedFields>
         <queriedFields>Permission_Set_Id__c</queriedFields>
         <queriedFields>Provisioning_Rule__c</queriedFields>
+        <queriedFields>Permission_Set_Group_Id__c</queriedFields>
     </recordLookups>
     <recordLookups>
         <name>getRules</name>
